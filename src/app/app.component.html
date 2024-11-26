@@ -1,0 +1,9 @@
+<div class = 'container'>
+  <ejs-timeline cssClass = "dot-color custom-connector" orientation = "Vertical" align = "alternate"
+  reverse = "true">
+    <e-items>
+      <e-item *ngFor = "let item of orderStatus" [content] = "item.content"
+      [oppositeContent] = "item.oppositeContent" [cssClass] = "item.cssClass" [disabled] = "item.disabled"></e-item>
+    </e-items>
+  </ejs-timeline>
+</div>
