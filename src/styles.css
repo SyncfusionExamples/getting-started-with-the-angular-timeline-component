@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
+@import '../node_modules/@syncfusion/ej2-layouts/styles/material3.css';
+
+.container{
+    height: 350px;
+    width: 720px;
+    margin: 30px auto;
+}
+
+.dot-color .state-inprogress .e-dot {
+    outline-color: #007bff;
+    background-color: #007bff;
+    --dot-size: 25px;
+}
+
+.dot-color .state-success .e-dot {
+    outline-color: #28a745;
+    background-color: #28a745;
+    --dot-size: 25px;
+}
+
+.custom-connector .state-completed.e-connector::after {
+    border-color: #28a745;
+}
+
+.custom-connector .state-intermediate.e-connector::after {
+    border-color: #007bff;
+    border-style: dashed;
+}
